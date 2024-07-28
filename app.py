@@ -1,7 +1,7 @@
 # app.py
 import subprocess
 import streamlit as st
-
+from Project import main
 
 
 
@@ -13,7 +13,9 @@ def start_script():
     if process is None:
         process = subprocess.Popen(['python', 'Project.py'])
         print("Script started.")
+        search_results = main()
         st.write("Script started.")
+        st.write(search_results)
     else:
         print("Script is already running.")
         st.write("Script is already running.")
