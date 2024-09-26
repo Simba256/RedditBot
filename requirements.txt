@@ -1,0 +1,6 @@
+selenium
+tk
+gspread
+google-auth
+urllib3
+requests
