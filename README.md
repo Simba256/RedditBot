@@ -64,7 +64,7 @@ This Reddit Bot automates the process of interacting with Reddit communities. It
     python ui_project.py
     ```
 
-7. If you wish to use Multilogin with this bot, please check out the [Multilogin branch](https://github.com/yourusername/reddit-bot/tree/Multilogin).
+7. If you wish to use Multilogin with this bot, please check out the [Multilogin branch](https://github.com/Simba256/reddit-bot/tree/Multilogin).
 
 ## Customization
 
