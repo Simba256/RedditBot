@@ -39,6 +39,11 @@ This Reddit Bot automates the process of interacting with Reddit communities. It
 - Make sure to allow access to the sheet using the Google Sheets API.
 - The Google Sheets API credentials should be stored in `credentials.py` in the same folder as other project files.
 
+## Multilogin Profiles
+
+- Update the `mla_profile_to_id.py` file with your Multilogin profiles and their respective IDs.
+- The `multilogin_profiles` dictionary in `mla_profile_to_id.py` maps profile names to their IDs. Ensure you replace the placeholder IDs with your actual profile IDs.
+
 ## Setup Instructions
 
 1. Clone this repository to your local machine:
@@ -59,12 +64,14 @@ This Reddit Bot automates the process of interacting with Reddit communities. It
    - If using Multilogin, enter the correct port number.
    - If not using Multilogin, you can enter any random number.
 
-6. Run the bot:
+6. **Multilogin Requirement**: Log in to Multilogin first and ensure it is running before executing this bot program.
+
+7. Run the bot:
     ```bash
     python ui_project.py
     ```
 
-7. If you wish to use Multilogin with this bot, please check out the [Multilogin branch](https://github.com/Simba256/reddit-bot/tree/Multilogin).
+8. If you wish to use Multilogin with this bot, please check out the [Multilogin branch](https://github.com/Simba256/reddit-bot/tree/Multilogin).
 
 ## Customization
 
