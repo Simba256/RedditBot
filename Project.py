@@ -12,8 +12,7 @@ from ScrollThrough import scroll_through
 from mla_profile_to_id import mla_profile_to_id
 from LoginReddit import login_reddit
 import threading
-from selenium import webdriver
-from credentials import credentials_dict
+from Credentials import credentials_dict
 
 def main(callback, stop_event, scroll_time, upvote_rate, port_number, progress_callback=None):
 
@@ -56,11 +55,7 @@ def main(callback, stop_event, scroll_time, upvote_rate, port_number, progress_c
             # Write start time to the Google Sheet
             sheet.update_cell(start_row, 3, start_time_str)
             callback(None, profile_name, f"Opening profile: {profile_name}")
-            # driver = open_reddit_with_multilogin(profile_id, port_number)
-            driver = webdriver.Chrome()
-            driver.get('https://www.reddit.com/')
-
-
+            driver = open_reddit_with_multilogin(profile_id, port_number)
             login_reddit(driver, profile_name, username_password_mapping[profile_name])
             print("logged in")
             sleep(5)
